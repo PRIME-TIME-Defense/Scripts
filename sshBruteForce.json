@@ -1,0 +1,122 @@
+[
+  {
+    "AccountId": "705235841658",
+    "Arn": "arn:aws:guardduty:us-west-2:705235841658:detector/7cc711b409b4d32dbeffba3c7ecc4bfe/finding/7cc717d6616ab8c3bd388d7bcc822e31",
+    "CreatedAt": "2024-03-11T22:40:35.029Z",
+    "Description": "10.0.0.176 is performing SSH brute force attacks against i-0598d1334a27c279a. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.",
+    "Id": "7cc717d6616ab8c3bd388d7bcc822e31",
+    "Partition": "aws",
+    "Region": "us-west-2",
+    "Resource": {
+      "InstanceDetails": {
+        "AvailabilityZone": "us-west-2a",
+        "ImageDescription": "Target - Web (Ubuntu Server 20.04) CLEAN",
+        "ImageId": "ami-07b6a44ded27d7381",
+        "InstanceId": "i-0598d1334a27c279a",
+        "InstanceState": "running",
+        "InstanceType": "t3.micro",
+        "OutpostArn": null,
+        "LaunchTime": "2024-03-08T18:12:41.000Z",
+        "NetworkInterfaces": [
+          {
+            "Ipv6Addresses": [],
+            "NetworkInterfaceId": "eni-033fedbeea3f9c5b3",
+            "PrivateDnsName": null,
+            "PrivateIpAddress": "10.0.0.175",
+            "PrivateIpAddresses": [
+              {
+                "PrivateDnsName": null,
+                "PrivateIpAddress": "10.0.0.175"
+              }
+            ],
+            "SecurityGroups": [
+              {
+                "GroupId": "sg-0ce0c0af5baf59de7",
+                "GroupName": "Final-401d10-v1-SG-aWvABLM8Lu01"
+              }
+            ],
+            "SubnetId": "subnet-0eb3edc6567199516",
+            "VpcId": "vpc-02923045326b5935e"
+          }
+        ],
+        "Platform": null,
+        "ProductCodes": [],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "BT1-Target - Web (Ubuntu Server 20.04)"
+          },
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "Web"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-west-2:705235841658:stack/Final-401d10-v1/7de86820-dcad-11ee-a416-0a92e4e70267"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "Final-401d10-v1"
+          }
+        ]
+      },
+      "ResourceType": "Instance"
+    },
+    "SchemaVersion": "2.0",
+    "Service": {
+      "Action": {
+        "ActionType": "NETWORK_CONNECTION",
+        "NetworkConnectionAction": {
+          "Blocked": false,
+          "ConnectionDirection": "INBOUND",
+          "LocalPortDetails": {
+            "Port": 22,
+            "PortName": "SSH"
+          },
+          "Protocol": "TCP",
+          "LocalIpDetails": {
+            "IpAddressV4": "10.0.0.175"
+          },
+          "RemoteIpDetails": {
+            "City": {
+              "CityName": ""
+            },
+            "Country": {
+              "CountryName": null
+            },
+            "GeoLocation": {
+              "Lat": 0,
+              "Lon": 0
+            },
+            "IpAddressV4": "10.0.0.176",
+            "Organization": {
+              "Asn": "0",
+              "AsnOrg": "",
+              "Isp": "",
+              "Org": ""
+            }
+          },
+          "RemotePortDetails": {
+            "Port": 32850,
+            "PortName": "Unknown"
+          }
+        }
+      },
+      "Archived": false,
+      "Count": 2,
+      "DetectorId": "7cc711b409b4d32dbeffba3c7ecc4bfe",
+      "EventFirstSeen": "2024-03-11T22:31:14.000Z",
+      "EventLastSeen": "2024-03-11T22:39:45.000Z",
+      "ResourceRole": "TARGET",
+      "ServiceName": "guardduty",
+      "AdditionalInfo": {
+        "Value": "{}",
+        "Type": "default"
+      }
+    },
+    "Severity": 2,
+    "Title": "10.0.0.176 is performing SSH brute force attacks against i-0598d1334a27c279a.",
+    "Type": "UnauthorizedAccess:EC2/SSHBruteForce",
+    "UpdatedAt": "2024-03-11T22:44:35.853Z"
+  }
+]

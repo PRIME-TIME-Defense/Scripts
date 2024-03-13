@@ -1,0 +1,202 @@
+[
+  {
+    "AccountId": "705235841658",
+    "Arn": "arn:aws:guardduty:us-west-2:705235841658:detector/7cc711b409b4d32dbeffba3c7ecc4bfe/finding/fac719f5b1301545f6805d345ff99c95",
+    "CreatedAt": "2024-03-12T18:27:27.923Z",
+    "Description": "6 security risk(s) detected including Application.Hacktool.ADH on EC2 instance i-049adf533f195590b.",
+    "Id": "fac719f5b1301545f6805d345ff99c95",
+    "Partition": "aws",
+    "Region": "us-west-2",
+    "Resource": {
+      "InstanceDetails": {
+        "AvailabilityZone": "us-west-2a",
+        "ImageDescription": "Windows Server 2008v2",
+        "ImageId": "ami-060f341a6691feb7e",
+        "InstanceId": "i-049adf533f195590b",
+        "InstanceState": "running",
+        "InstanceType": "t3.medium",
+        "OutpostArn": null,
+        "LaunchTime": "2024-03-07T18:07:28.000Z",
+        "NetworkInterfaces": [
+          {
+            "Ipv6Addresses": [],
+            "NetworkInterfaceId": "eni-0f711d3116eae7a34",
+            "PrivateDnsName": null,
+            "PrivateIpAddress": "10.0.0.82",
+            "PrivateIpAddresses": [
+              {
+                "PrivateDnsName": null,
+                "PrivateIpAddress": "10.0.0.82"
+              }
+            ],
+            "SecurityGroups": [
+              {
+                "GroupId": "sg-0ce0c0af5baf59de7",
+                "GroupName": "Final-401d10-v1-SG-aWvABLM8Lu01"
+              }
+            ],
+            "SubnetId": "subnet-0eb3edc6567199516",
+            "VpcId": "vpc-02923045326b5935e"
+          }
+        ],
+        "Platform": "windows",
+        "ProductCodes": [],
+        "Tags": [
+          {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "Metasploitable3"
+          },
+          {
+            "Key": "Name",
+            "Value": "BT1-Target - Metasploitable3 (WinServ 2008)"
+          },
+          {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:us-west-2:705235841658:stack/Final-401d10-v1/7de86820-dcad-11ee-a416-0a92e4e70267"
+          },
+          {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "Final-401d10-v1"
+          }
+        ]
+      },
+      "ResourceType": "Instance",
+      "EbsVolumeDetails": {
+        "ScannedVolumeDetails": [
+          {
+            "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0b889116d458edf3b",
+            "VolumeType": "gp2",
+            "DeviceName": "/dev/sdg",
+            "VolumeSizeInGB": 10,
+            "EncryptionType": "UNENCRYPTED",
+            "SnapshotArn": "arn:aws:ec2:us-west-2:705235841658:snapshot/snap-06de8aad549f3d3ac",
+            "KmsKeyArn": null
+          },
+          {
+            "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0a7e4c95f0b972616",
+            "VolumeType": "gp2",
+            "DeviceName": "/dev/sda1",
+            "VolumeSizeInGB": 100,
+            "EncryptionType": "UNENCRYPTED",
+            "SnapshotArn": "arn:aws:ec2:us-west-2:705235841658:snapshot/snap-03b790312fe207f8a",
+            "KmsKeyArn": null
+          }
+        ]
+      }
+    },
+    "SchemaVersion": "2.0",
+    "Service": {
+      "Archived": false,
+      "Count": 1,
+      "DetectorId": "7cc711b409b4d32dbeffba3c7ecc4bfe",
+      "EventFirstSeen": "2024-03-12T18:27:27.923Z",
+      "EventLastSeen": "2024-03-12T18:27:27.923Z",
+      "ServiceName": "guardduty",
+      "AdditionalInfo": {
+        "Value": "{}",
+        "Type": "default"
+      },
+      "FeatureName": "EbsVolumeScan",
+      "EbsVolumeScanDetails": {
+        "ScanId": "4a81455803323b2f4587b768094310aa",
+        "ScanStartedAt": "2024-03-12T18:10:12.000Z",
+        "ScanCompletedAt": "2024-03-12T18:27:27.000Z",
+        "TriggerFindingId": "14c711b6f8cc08a01bff6010ab5ad836",
+        "Sources": [
+          "Bitdefender"
+        ],
+        "ScanDetections": {
+          "ScannedItemCount": {
+            "TotalGb": 23,
+            "Files": 65617,
+            "Volumes": 2
+          },
+          "ThreatsDetectedItemCount": {
+            "Files": 6
+          },
+          "HighestSeverityThreatDetails": {
+            "Severity": "HIGH",
+            "ThreatName": "Application.Hacktool.ADH",
+            "Count": 1
+          },
+          "ThreatDetectedByName": {
+            "ItemCount": 6,
+            "UniqueThreatNameCount": 4,
+            "Shortened": false,
+            "ThreatNames": [
+              {
+                "Name": "Application.Hacktool.ADH",
+                "Severity": "HIGH",
+                "ItemCount": 1,
+                "FilePaths": [
+                  {
+                    "FilePath": "/Users/vagrant/Desktop/NS.exe",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0a7e4c95f0b972616",
+                    "Hash": "f47e3555461472f23ab4766e4d5b6f6fd260e335a6abc31b860e569a720a5446",
+                    "FileName": "NS.exe"
+                  }
+                ]
+              },
+              {
+                "Name": "Generic.SmallAsp.B.9CA5AE0A",
+                "Severity": "HIGH",
+                "ItemCount": 2,
+                "FilePaths": [
+                  {
+                    "FilePath": "/inetpub/wwwroot/caidao.asp",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0a7e4c95f0b972616",
+                    "Hash": "9effb1da549f943b27f09abc78e4c16efc521461220ae72cf3171a8dd5a7d8c8",
+                    "FileName": "caidao.asp"
+                  },
+                  {
+                    "FilePath": "/resources/backdoors/caidao.asp",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0b889116d458edf3b",
+                    "Hash": "9effb1da549f943b27f09abc78e4c16efc521461220ae72cf3171a8dd5a7d8c8",
+                    "FileName": "caidao.asp"
+                  }
+                ]
+              },
+              {
+                "Name": "Trojan.GenericKD.71809216",
+                "Severity": "HIGH",
+                "ItemCount": 1,
+                "FilePaths": [
+                  {
+                    "FilePath": "/Windows/System32/Ms9B303C98App.dll",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0a7e4c95f0b972616",
+                    "Hash": "7893c5e68ff78d76c0b4b8ba5ae2367fa9c285efe520de44ff12498ba90df5b0",
+                    "FileName": "Ms9B303C98App.dll"
+                  }
+                ]
+              },
+              {
+                "Name": "Trojan.PHP.Agent.NT",
+                "Severity": "HIGH",
+                "ItemCount": 2,
+                "FilePaths": [
+                  {
+                    "FilePath": "/resources/backdoors/meterpreter.php",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0b889116d458edf3b",
+                    "Hash": "a725fea883b6db1e96cdd212290e470b6fba52eb4db15533c5cea5cfe05015d1",
+                    "FileName": "meterpreter.php"
+                  },
+                  {
+                    "FilePath": "/wamp/www/meterpreter.php",
+                    "VolumeArn": "arn:aws:ec2:us-west-2:705235841658:volume/vol-0a7e4c95f0b972616",
+                    "Hash": "a725fea883b6db1e96cdd212290e470b6fba52eb4db15533c5cea5cfe05015d1",
+                    "FileName": "meterpreter.php"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "ScanType": "GUARDDUTY_INITIATED"
+      }
+    },
+    "Severity": 8,
+    "Title": "6 security risk(s) detected including Application.Hacktool.ADH on EC2 instance i-049adf533f195590b.",
+    "Type": "Execution:EC2/MaliciousFile",
+    "UpdatedAt": "2024-03-12T18:27:27.923Z"
+  }
+]

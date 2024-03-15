@@ -28,7 +28,7 @@ csv_file = 'connections.csv'
 
 # Email details
 sender_email = 'jokonscotty4@gmail.com'
-sender_password = 'Solarwinds123'
+sender_password = 'Sgdsgfsgdfs3'
 receiver_email = 'jokonscotty4@gmail.com'
 subject = 'Detected Connections'
 

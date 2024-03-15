@@ -31,7 +31,7 @@ csv_file = 'traffic_data.csv'
 
 # Email details
 sender_email = 'jokonscotty4@gmail.com'
-sender_password = 'Solarwinds123'
+sender_password = 'gjfkjhkjdhskjfgs'
 receiver_email = 'jokonscotty4@gmail.com'
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
